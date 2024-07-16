@@ -95,6 +95,10 @@ public class UserRepository implements JpaRepository<User, Long> {
         return null;
     }
 
+    public <S extends User> S save() {
+        return null;
+    }
+
     @Override
     public <S extends User> S save(S entity) {
         return null;
@@ -163,5 +167,9 @@ public class UserRepository implements JpaRepository<User, Long> {
     @Override
     public Page<User> findAll(Pageable pageable) {
         return null;
+    }
+
+    public boolean existsByAccountNumber(String number) {
+        return Boolean.parseBoolean(null);
     }
 }
